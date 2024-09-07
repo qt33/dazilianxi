@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>打字练习</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">打字练习</h1>
+    
+    <!-- 文件上传部分 -->
+    <input type="file" id="file-input" accept=".txt">
+    
+    <!-- 练习文本区域 -->
+    <div id="text-container">
+      <p id="text-to-type">这是一个中文打字练习示例。</p>
+    </div>
+    
+    <!-- 暂停按钮 -->
+    <button id="pause-btn">暂停</button>
+    
+    <!-- 语言切换按钮 -->
+    <button id="language-btn">切换到英文</button>
+    
+    <!-- 用户输入显示区域 -->
+    <div id="input-display"></div>
+    
+    <textarea id="input-text" placeholder="开始输入..." disabled></textarea>
+    
+    <div class="stats">
+      <p id="timer">时间: 0秒</p>
+      <p id="accuracy">准确率: 100%</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
